@@ -18,3 +18,7 @@ Publish to gitlab pages
 
 documentation.gitlab-ci.yml
 I borrowed the jekyll pipeline and adapted it for asciidoctor
+
+== index.adoc
+
+for now we start building the website by parsing the index.adoc file

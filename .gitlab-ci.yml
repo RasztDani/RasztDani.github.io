@@ -17,7 +17,7 @@ pages:
   script:
     - asciidoctor-pdf index.adoc
     - mkdir public
-    - mv index.html ./public/index.html
+    - mv index.html public/index.html
   artifacts:
     paths:
     - public

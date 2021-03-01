@@ -22,3 +22,8 @@ I borrowed the jekyll pipeline and adapted it for asciidoctor
 == index.adoc
 
 for now we start building the website by parsing the index.adoc file
+
+== TODO
+
+* build an asciidoctor image to speed up the process
+* add a links section where everyone can put in gitlab page of his repositories -> single point of entry

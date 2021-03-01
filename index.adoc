@@ -4,22 +4,22 @@ Example and guide for documentation
 
 == Overview
 
-We decided to go for centralized and versionized documentation.
-To make it easy to write while coding we went for a markup language.
-Asciidoc seems like a good choice for wrtie once publish anywhere
+We decided to go for centralized and versionized documentation. +
+To make it easy to write while coding we went for a markup language. +
+Asciidoc seems like a good choice for 'write once publish anywhere' 
 
 == Goal
 
-Write documentation and check it in with the source.
-Have a pipeline run asciidoctor to turn .adoc to .html
+Write documentation and check it in with the source. +
+Have a pipeline run asciidoctor to turn .adoc to .html +
 Publish to gitlab pages
 
 == Pipeline
 
-documentation.gitlab-ci.yml
+documentation.gitlab-ci.yml +
 I borrowed the jekyll pipeline and adapted it for asciidoctor
 
-== usage
+== Usage
 
 * use/copy the .gitlab-ci.yml & Gemfile from this project
 * this builds a gitlab page from an index.adoc document in your source

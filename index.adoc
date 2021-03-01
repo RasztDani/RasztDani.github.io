@@ -19,9 +19,12 @@ Publish to gitlab pages
 documentation.gitlab-ci.yml
 I borrowed the jekyll pipeline and adapted it for asciidoctor
 
-== index.adoc
+== usage
 
-for now we start building the website by parsing the index.adoc file
+* use/copy the .gitlab-ci.yml & Gemfile from this project
+* this builds a gitlab page from an index.adoc document in your source
+* the page is deployed under {organisation}.gitlab.io/{repository-name}/
+
 
 == TODO
 

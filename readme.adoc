@@ -1,3 +1,20 @@
 = gp-documentation-example
 
 Example and guide for documentation
+
+== Overview
+
+We decided to go for centralized and versionized documentation.
+To make it easy to write while coding we went for a markup language.
+Asciidoc seems like a good choice for wrtie once publish anywhere
+
+== Goal
+
+Write documentation and check it in with the source.
+Have a pipeline run asciidoctor to turn .adoc to .html
+Publish to gitlab pages
+
+== Pipeline
+
+documentation.gitlab-ci.yml
+I borrowed the jekyll pipeline and adapted it for asciidoctor

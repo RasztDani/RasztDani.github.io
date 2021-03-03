@@ -14,8 +14,6 @@ before_script:
 
 pages:
   stage: deploy
-  tags:
-    - gepaplexx
   script:
     - asciidoctor index.adoc
     - mkdir public

@@ -30,3 +30,5 @@ I borrowed the jekyll pipeline and adapted it for asciidoctor
 
 * build an asciidoctor image to speed up the process
 * add a links section where everyone can put in gitlab page of his repositories -> single point of entry
+
+include::https://gitlab.com/gepaplexx/gp-openshift/-/blob/develop/gp-quotas-and-nw-isolation/README.md[]

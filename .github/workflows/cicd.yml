@@ -28,7 +28,7 @@ jobs:
       - run: git config user.email test@test.test
       - run: git add --all
       - run: git commit -m "Publish to gh-pages branch"
-      - run: git remote add pages https://x-access-token:$GITHUB_TOKEN@https://github.com/RasztDani/RasztDani.github.io.git
+      - run: git remote add pages https://x-access-token:$GITHUB_TOKEN@github.com/RasztDani/RasztDani.github.io.git
       - run: git fetch --all
       - run: git remote -v
       - run: git show-ref

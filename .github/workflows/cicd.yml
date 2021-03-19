@@ -21,9 +21,12 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - run: bundle install
       - run: ls -a
+      - run: ls ../ -a
+      - run: ls ../../ -a
+      - run: ls ../../../ -a
       - run: pwd
       - run: /usr/local/bin/asciidoctor index.adoc
-      - run: mv indec.adoc docs/index.html
+      - run: mv index.adoc docs/index.html
       # pushes using the user that kicked off the action. Requires `jq` in the builder
       - run: git config user.name $(jq .pusher.username $GITHUB_PAYLOAD)
       - run: git config user.email $(jq .pusher.email $GITHUB_PAYLOAD)

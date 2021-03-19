@@ -26,10 +26,9 @@ jobs:
       # pushes using the user that kicked off the action. Requires `jq` in the builder
       - run: git config user.name test
       - run: git config user.email test@test.test
-      - run: git checkout gh-pages
       - run: git add --all
       - run: git commit -m "Publish to gh-pages branch"
       - run: git remote add pages https://x-access-token:$GITHUB_TOKEN@github.com/RasztDani/gp-documentation-example.git
-      - run: git push -u pages -f
+      - run: git push -u pages gh-pages -f
 
 

@@ -29,9 +29,9 @@ jobs:
       - run: git add --all
       - run: git commit -m "Publish to gh-pages branch"
       - run: git remote add pages https://x-access-token:$GITHUB_TOKEN@github.com/RasztDani/gp-documentation-example.git
+      - run: git fetch --all
       - run: git remote -v
       - run: git show-ref
-      - run: git fetch --all
       - run: git branch -a
       - run: git push -u pages gh-pages -f
 

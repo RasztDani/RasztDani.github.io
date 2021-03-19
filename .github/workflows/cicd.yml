@@ -29,7 +29,7 @@ jobs:
 
       - run: git add --all
       - run: git commit -m "Publish to gh-pages branch"
-      - run: git remote add pages https://x-access-token:$GITHUB_TOKEN@github.com/RasztDani/RasztDani.github.io.git
+      - run: git remote add pages https://x-access-token:$GITHUB_TOKEN@github.com/RasztDani/RasztDani.github.io
       - run: git push pages gh-pages -f
 
 

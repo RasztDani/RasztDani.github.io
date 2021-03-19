@@ -20,12 +20,7 @@ jobs:
           ruby-version: 2.6 # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - run: bundle install
-      - run: ls -a
-      - run: ls ../ -a
-      - run: ls ../../ -a
-      - run: ls ../../../ -a
-      - run: pwd
-      - run: /usr/bin/asciidoctor index.adoc
+      - run: bundle exec asciidoctor index.adoc
       - run: mv index.adoc docs/index.html
       # pushes using the user that kicked off the action. Requires `jq` in the builder
       - run: git config user.name $(jq .pusher.username $GITHUB_PAYLOAD)
